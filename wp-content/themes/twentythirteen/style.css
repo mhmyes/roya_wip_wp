@@ -109,7 +109,7 @@ textarea {
 body {
 	color: #141412;
 	line-height: 1.5;
-	margin: 0;
+	margin: 50px 0 50px;
 }
 
 a {
@@ -153,8 +153,23 @@ h1 {
 }
 
 h2 {
-	font-size: 30px;
-	margin: 25px 0;
+	font-size: 1.8em;
+	font-weight: 200;
+	line-height: 1.4em;
+	padding: 40px 0 30px;
+	color: black;
+	border-bottom: 1px dotted grey;
+	border-top: 8px solid ;
+}
+
+/* for drop caps */
+h2:first-child::first-letter {
+	float: left;
+	color: salmon;
+	font-size: 3.2em;
+	padding-top: 20px;
+	padding-right: 5px;
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
 h3 {
@@ -201,7 +216,8 @@ mark {
 }
 
 p {
-	margin: 0 0 24px;
+	font-size: 1.3em;
+	margin-top: 30px;
 }
 
 code,
@@ -766,14 +782,22 @@ img.wp-smiley,
 
 .site {
 
-	/* cancel out site border */
+	/* cancel out site border 
 	border-left: 1px solid #f2f2f2;
 	border-right: 1px solid #f2f2f2;
-	/* cancel out site border */
+	cancel out site border */
+
+	/* adds white background to content holder */
+	background-color: white;
 
 	margin: 0 auto;
 	max-width: 1000px; /* originally 1600px */
 	width: 100%;
+
+	background: url(http://127.0.0.1:8080/wordpress/wp-content/uploads/2014/01/flowers-photography-widescreen-2560x1600-light.jpg) no-repeat center center fixed;
+	-webkit-box-shadow: 0px 0px 10px -3px rgba(219,219,219,1);
+	-moz-box-shadow: 0px 0px 10px -3px rgba(219,219,219,1);
+	box-shadow: 0px 0px 10px -3px rgba(219,219,219,1);
 }
 
 .site-main {
@@ -806,6 +830,10 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
+	padding: 30px 0 45px;
+	border-bottom: 1px solid #f2f2f2;
+	background-color: white;
+
 }
 
 .site-header .home-link {
@@ -824,17 +852,19 @@ img.wp-smiley,
 }
 
 .site-title {
-	/* font-size: 60px; */
+	font-size: 2.2em;
+	font-weight: 200;
 	line-height: 1;
 	margin: 0;
-	padding: 30px 0 15px;
-	color: #efeae9;
+	padding: 60px 0 10px;
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
 .site-description {
 	font-weight: 200;
 	margin: 0;
 	padding-bottom: 15px;
+	display: none;
 }
 
 
@@ -868,7 +898,7 @@ div.nav-menu > ul {
 	display: block;
 	font-size: 15px;
 	line-height: 1;
-	padding: 15px 20px;
+	padding: 0px 20px;
 	text-decoration: none;
 }
 
@@ -983,7 +1013,7 @@ ul.nav-menu li:hover > ul,
 	margin: 0 auto;
 	max-width: 900px;
 	width: 100%;
-	color: #8c8c70;
+	/* color: #8c8c70; */
 }
 
 .sidebar .entry-header,
@@ -1111,11 +1141,11 @@ ul.nav-menu li:hover > ul,
  */
 
 .entry-content {
-	-webkit-hyphens: auto;
+	/*-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
 	-ms-hyphens:     auto;
 	hyphens:         auto;
-	word-wrap: break-word;
+	word-wrap: none;*/
 }
 
 .entry-content a,
@@ -2406,16 +2436,26 @@ footer.entry-meta {
  * ----------------------------------------------------------------------------
  */
 
+/* footer alignment modifications */
+
+aside#nav_menu-5.widget.widget_nav_menu.masonry-brick {
+	position: relative;
+	float: right;
+	text-align: right;
+	top: 0px;
+	left: 0;
+}
+
 .widget {
 	/* background-color: rgba(247, 245, 231, 0.7); */
-	font-size: 14px;
-	-webkit-hyphens: auto;
+	/* font-size: 14px; */
+	/*-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
 	-ms-hyphens:     auto;
-	hyphens:         auto;
+	hyphens:         auto;*/
 	margin: 0 0 24px;
-	padding: 20px;
-	word-wrap: break-word;
+	padding: 15px;
+	word-wrap: none;
 }
 
 .widget .widget-title {
@@ -2512,8 +2552,7 @@ footer.entry-meta {
  */
 
 .site-footer {
-	/* background-color: #e8e5ce; */
-	color: #686758;
+	background-color: rgba(244, 244, 244, 0.8);
 	font-size: 14px;
 	text-align: center;
 	/* to box up the footer */
