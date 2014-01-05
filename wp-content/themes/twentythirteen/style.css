@@ -1,17 +1,10 @@
 /*
 Theme Name: Twenty Thirteen
-Theme URI: http://wordpress.org/themes/twentythirteen
 Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
-Version: 1.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+
+Edits by mhmyes
 */
 
 
@@ -109,7 +102,7 @@ textarea {
 body {
 	color: #141412;
 	line-height: 1.5;
-	margin: 50px 0 50px;
+	margin: 0;
 }
 
 a {
@@ -791,13 +784,15 @@ img.wp-smiley,
 	background-color: white;
 
 	margin: 0 auto;
-	max-width: 1000px; /* originally 1600px */
+	/* max-width: 1000px; originally 1600px, creates nice full width bleed without this */
 	width: 100%;
 
 	background: url(http://127.0.0.1:8080/wordpress/wp-content/uploads/2014/01/flowers-photography-widescreen-2560x1600-light.jpg) no-repeat center center fixed;
+	
+	/* box shadow 
 	-webkit-box-shadow: 0px 0px 10px -3px rgba(219,219,219,1);
 	-moz-box-shadow: 0px 0px 10px -3px rgba(219,219,219,1);
-	box-shadow: 0px 0px 10px -3px rgba(219,219,219,1);
+	box-shadow: 0px 0px 10px -3px rgba(219,219,219,1); */
 }
 
 .site-main {
@@ -830,9 +825,9 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
-	padding: 30px 0 45px;
+	padding: 0 0 15px;
 	border-bottom: 1px solid #f2f2f2;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.85);
 
 }
 
