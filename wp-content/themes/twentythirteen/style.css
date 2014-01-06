@@ -97,10 +97,10 @@ input,
 select,
 textarea {
 	font-family: "Adobe Caslon Pro", Helvetica, sans-serif;
+	text-rendering: optimizeLegibility;
 }
 
 body {
-	color: #141412;
 	line-height: 1.5;
 	margin: 0;
 }
