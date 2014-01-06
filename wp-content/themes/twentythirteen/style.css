@@ -176,14 +176,18 @@ h3 {
 }
 
 h4 {
+	/* not adapted for responsiveness yet */
+
 	font-size: 1.4em;
-	font-style: italic;
-	line-height: 1.3em;
+	line-height: 1.5em;
 	text-align: center;
-	border-radius: 5px;
-	padding: 40px 65px;
-	color: white;
-	background-color: lightgrey;
+	padding: 60px 55px 50px;
+	margin: 0 60px;
+	border: 1px dotted  lightsalmon;
+	outline: solid 3px lightsalmon;
+	outline-offset: -9px;
+	text-transform: uppercase;
+	letter-spacing: .5em;
 }
 
 h5, h6 {
@@ -840,7 +844,8 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
-	padding: 0 0 15px;
+	padding: 0 0 20px;
+	margin-bottom: 30px;
 	border-bottom: 1px solid #f2f2f2;
 	background-color: rgba(255, 255, 255, 0.85);
 
@@ -862,11 +867,11 @@ img.wp-smiley,
 }
 
 .site-title {
-	font-size: 2.2em;
-	font-weight: 200;
-	line-height: 1;
+	font-size: 2.5em;
+	font-weight: 800;
+	/* line-height: 1; */
 	margin: 0;
-	padding: 60px 0 10px;
+	padding: 60px 0 0;
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
@@ -894,7 +899,7 @@ img.wp-smiley,
 ul.nav-menu,
 div.nav-menu > ul {
 	margin: 0;
-	padding: 0 0px 0 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -906,23 +911,24 @@ div.nav-menu > ul {
 .nav-menu li a {
 	color: black;
 	display: block;
-	font-size: 15px;
+	font-size: 1.1em;
 	line-height: 1;
-	padding: 20px 20px;
+	margin-top: 20px;
+	padding: 10px 15px;
+	margin: 40px 30px 5px 30px;
 	text-decoration: none;
 }
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover {
-	color: #947961;	
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .nav-menu .sub-menu,
 .nav-menu .children {
-	background-color: #220e10;
-	border: 2px solid #f7f5e7;
-	border-top: 0;
+	background-color: white;
+	border: 0;
+	border-top: 0; 
 	display: none;
 	padding: 0;
 	position: absolute;
@@ -939,14 +945,16 @@ div.nav-menu > ul {
 
 ul.nav-menu ul a,
 .nav-menu ul ul a {
-	color: #fff;
+	/* color: #fff; */
+	font-size: 0.9em;
+	font-style: italic;
 	margin: 0;
-	width: 200px;
+	/* width: 200px; */
 }
 
 ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover {
-	background-color: #5a3a36;
+	color: lightsalmon;
 }
 
 ul.nav-menu li:hover > ul,
@@ -958,7 +966,7 @@ ul.nav-menu li:hover > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #5a3a36;
+	color: salmon;
 }
 
 .menu-toggle {
@@ -1892,11 +1900,11 @@ footer.entry-meta {
 }
 
 .navigation a {
-	color: #bc360a;
+	color: salmon;
 }
 
 .navigation a:hover {
-	color: #ea9629;
+	color: lightsalmon;
 	text-decoration: none;
 }
 
